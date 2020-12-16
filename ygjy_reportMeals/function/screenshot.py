@@ -8,7 +8,7 @@ def screenshot(save_path):
     os.environ['webdriver.chrome.driver'] = chrome_path
     driver = webdriver.Chrome(chrome_path)
     sleep(1)
-    driver.get("file:///C:/windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins\workspace/reportMeals/ygjy_reportMeals/reports/SummaryReport.html")
+    driver.get("file:///E:\SummaryReport.html")
     driver.maximize_window()
     driver.implicitly_wait(10)
     driver.save_screenshot(save_path)
